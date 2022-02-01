@@ -1,5 +1,6 @@
 body {
       font-family: arial, sans-serif;
+      padding-top: 30px;
 
 }
 
@@ -21,7 +22,6 @@ body {
 h1 {
   color: #878787;
 font-size: 24px;
-  font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -41,8 +41,16 @@ li {
     line-height: 19px;
 }
 
+.weather-temperature {
+    display: flex;
+    align-items: center;
+}
+
 .weather-temperature img {
     margin-right: 5px;
+    line-height: 1;
+    padding-top: 0;
+    margin-top: 0;
     height: 64px;
     width: 64px;
 }
@@ -51,7 +59,7 @@ li {
     color: rgb(33, 33, 33);
     font-size: 64px;
     line-height: 1;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 .weather-temperature .units {
