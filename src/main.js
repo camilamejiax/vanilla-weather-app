@@ -42,6 +42,10 @@ function displayTemperature(response) {
 
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
+  let iconElement = document.querySelector("icon");
+  iconElement.setAttribute("src", `https://openweathermap.org/img.wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", resoponse.data.weather[0].description)
 }
 
 let apiKey = "7474fc14b19a5b425bb49dcabc42f77b";
