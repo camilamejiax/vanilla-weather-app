@@ -97,6 +97,10 @@ li::first-letter {
     font-size: 13px;
 }
 
+.weather-forecast-temperature-max {
+    font-weight: bold;
+}
+
 .weather-forecast-temp-min {
     opacity: 0.4;
 }
